@@ -1,0 +1,40 @@
+{
+  "Livros": [
+    {
+      "id": 2,
+      "nome": "O manuscrito original",
+      "autor": "Napoleon Hill",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51rndQyxefL._SX331_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Quem pensa enriquece:",
+      "autor": " Napoleon Hill ",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51rA1ky2-kL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Holy Bible",
+      "autor": "American Standard Version",
+      "foto": "https://m.media-amazon.com/images/I/21MNiIQ3i4L.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/511+-lOOtsL._SX319_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "Os segredos da mente milionária ",
+      "autor": "T. Harv Eker",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51+GR0xBMWL._SY344_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "O poder do hábito",
+      "autor": "Charles Duhigg ",
+      "foto": "https://images-na.ssl-images-amazon.com/images/I/51Xby92J9KL._SY344_BO1,204,203,200_QL70_ML2_.jpg"
+    }
+  ]
+}

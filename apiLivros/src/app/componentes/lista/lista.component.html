@@ -1,0 +1,33 @@
+
+
+        <div class="container">
+
+        <h2 class="text-center mt-5">Biblioteca <i class="bi bi-book"></i></h2>
+        <div *ngFor="let item of Livros" class="d-flex flex-wrap mx-3 mt-3" style="float:left; justify-content:center; gap:20px" >
+
+           <div class="card cardsLivros" style="background-color: #F0F0F0; width: 18rem; ">
+          <img class="card-img-top" src="{{item.foto}}">
+          <div class="card-body">
+            <h5 class="card-title">ID: {{item.id}}</h5>
+            <h5 class="card-title">Nome: {{item.nome}}</h5>
+            <h5 class="card-title">Autor: {{item.autor}}</h5>
+            <button (click)="editar(item.id)" type="button" class="btn btn-success mx-2" style="align-items: center;">Editar</button>
+            <button (click)="mostrarModal(item.id)" type="button" class="btn btn-danger">Excluir</button>
+         </div>
+                  </div>
+        </div>
+      </div>
+
+
+
+<div *ngIf="isModal"> <!---->
+<div class="minhaModal">
+  <div class="tituloModal bg-danger text-white">
+    <h5>Aviso</h5>
+  </div>
+  <h6 class="my-4">Confirma essa operação?</h6>
+  <button class="btn btn-outline-danger mx-1"(click)="cancelarAcao()">Cancelar</button>
+  <button class="btn btn-danger mx-1" (click)="confirmarAcao()">Confirmar</button>
+</div>
+</div>
+

@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="formulario">
+        <form [formGroup]="form">
+          <div class="row mb-3">
+            <label class="col-form-label">Nome do Livro:</label>
+            <div>
+              <input type="text" class="form-control" id="nome" formControlName="nome">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-form-label">Autor do Livro:</label>
+            <div>
+              <input type="text" class="form-control" id="autor" formControlName="autor">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-form-label">Foto:</label>
+            <div>
+              <input type="text" class="form-control" id="foto" formControlName="foto">
+            </div>
+          </div>
+          <div *ngIf="verificarStatus;then cadastrar else alterar"></div>
+          <ng-template #cadastrar><button class="btn btn-success mx-1" (click)="mostrarModalCadastrar()">Salvar</button></ng-template>
+          <ng-template #alterar><button class="btn btn-warning mx-1" (click)="salvarLivro()">Alterar</button> </ng-template>
+
+          <button type="reset" class="btn btn-outline-danger mx-1" routerLink="/lista">Cancelar</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="foto">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div *ngIf="isModalCadastrar"> <!---->
+  <div class="minhaModalCadastrar">
+    <div class="tituloModal bg-warning text-white">
+      <h5>Aviso</h5>
+    </div>
+    <h6 class="my-4">Confirma o cadastro?</h6>
+    <button class="btn btn-outline-danger mx-1"(click)="cancelarAcao()">Cancelar</button>
+    <button class="btn btn-danger mx-1" (click)="confirmarAcaoCadastro()">Confirmar</button>
+  </div>
+  </div>
